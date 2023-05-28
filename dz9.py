@@ -3,18 +3,16 @@
 # В последующих  строках записаны N целых чисел Ai. Последняя строка содержит число X
 
 n = int(input('Введите число элементов: '))
-may_list = []
+my_list = []
 for i in range(n):
-    may_list.append(i)
-print(may_list)
-a = int(input('Введите число: '))
-for i in may_list:
-    if i == a:
-        print("->", i-1)
-        break
-    else: 
-        print("->", a-1)
-        break
+     a = int(input('Введите элемент массива: '))
+     my_list.append(a)
+my_list2 = []
+x = int(input('Введите искомое число: '))
+for i in my_list:
+     a = abs(i - x)
+     my_list2.append(a)
+print(f"Ближайшее число: {my_list[my_list2.index(min(my_list2))]}")
 
 
 
