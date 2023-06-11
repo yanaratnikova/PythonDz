@@ -13,5 +13,5 @@ def print_operation_table(operation, num_rows, num_columns):
             row.append(operation(i, j))
         matrix.append(row)
     for row in matrix:
-        print(*row)
+        print(*row, sep='\t')
 print_operation_table(lambda x, y: x*y, 6,6)
